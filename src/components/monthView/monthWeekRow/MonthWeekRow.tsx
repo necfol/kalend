@@ -1,3 +1,9 @@
+/*
+ * @LastEditors: Necfol
+ * @Date: 2023-02-01 20:47:20
+ * @LastEditTime: 2023-02-01 20:48:59
+ * @FilePath: /kalend/src/components/monthView/monthWeekRow/MonthWeekRow.tsx
+ */
 import { Context, Store } from '../../../context/store';
 import { EVENT_TYPE } from '../../../common/enums';
 import { MonthWeekRowProps } from './MonthWeekRow.props';
@@ -20,9 +26,8 @@ const MonthWeekRow = (props: MonthWeekRowProps) => {
     return itemRows.map((item: any) => {
       return (
         <EventButton
-          key={`${item.event.id}${
-            item.event.internalID ? item.event.internalID : ''
-          }`}
+          key={`${item.event.id}${item.event.internalID ? item.event.internalID : ''
+            }`}
           item={{ ...item }}
           meta={item.meta}
           type={EVENT_TYPE.MONTH}
@@ -47,7 +52,7 @@ const MonthWeekRow = (props: MonthWeekRowProps) => {
         <CalendarHeaderDates
           calendarDays={days}
           daysNum={7}
-          setViewChanged={props.setViewChanged}
+        // setViewChanged={props.setViewChanged}
         />
       </div>
       <div className={'Kalend__MonthWeekRow__container-events'}>{events}</div>

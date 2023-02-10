@@ -1,7 +1,7 @@
 {
-  "name": "kalend",
-  "version": "0.17.6",
-  "author": "nibdo",
+  "name": "n-calend",
+  "version": "0.0.4",
+  "author": "necfol",
   "license": "MIT",
   "private": false,
   "source": "src/index.tsx",
@@ -18,7 +18,7 @@
   "style": "dist/styles/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nibdo/kalend"
+    "url": "https://github.com/necfol/kalend"
   },
   "dependencies": {
     "color": "4.2.3",
